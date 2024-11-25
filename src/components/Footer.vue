@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 <template>
     <div class="Footer">
         <p>© 2024 StreamFlix, All Rights Reserved.</p>
@@ -8,7 +5,7 @@
 </template>
 
 <style scoped>
-footer {
+.Footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -17,5 +14,4 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
 </style>
