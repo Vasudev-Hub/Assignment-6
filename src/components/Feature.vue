@@ -1,17 +1,20 @@
 <script setup>
-
+import axios from "axios";
+const response = await axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${import.meta.env.VITE_API_KEY}`);
 </script>
 
 <template>
-     <h2>Featured Movies And Shows</h2>
-        <div class="movie-gallery">
-            <img src="https://i.redd.it/jb5aaywg7sy71.jpg" alt="Movie 1">
-            <img src="https://m.media-amazon.com/images/I/51HUrY93cwL.jpg" alt="Movie 2">
-            <img src="https://image.tmdb.org/t/p/original/klL4yhwiU8aF4AuF5dCfJA9sRnS.jpg" alt="Shows 1">
-            <img src="https://m.media-amazon.com/images/I/81Zj-BWityL.jpg" alt="Shows 2">
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Spider-Man-_Across_the_Spider-Verse_poster.jpg/220px-Spider-Man-_Across_the_Spider-Verse_poster.jpg"
-                alt="Movie 3">
-        </div>
+<template>
+  <div class="movie-gallery">
+    <h1>Featured Movies And Shows</h1>
+    <div class="movie-list">
+      <div v-for="movie in response.data.results" :key="movie.id" class="movie-card" @click="getMovieDetails(movie.id)">
+        <img :src="`https://image.tmdb.org/t/p/w500${movie.poster_path}`" alt="Movie Poster" class="movie-poster" />
+        <p class="movie-title">{{ movie.title }}</p>
+      </div>
+    </div>
+  </div>
+</template>
 </template>
 
 <style scoped>
@@ -25,4 +28,4 @@
     width: 150px;
     height: 220px;
 }
-</style>s
+</style>
