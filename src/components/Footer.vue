@@ -1,17 +1,18 @@
+<script setup>
+</script>
 <template>
-    <div class="Footer">
+    <div class="footer">
         <p>© 2024 StreamFlix, All Rights Reserved.</p>
     </div>
 </template>
-
 <style scoped>
-.Footer {
-    background-color: #333;
+.footer {
+    background-color: rgb(0, 0, 0);
     color: white;
+    position: absolute;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 </style>

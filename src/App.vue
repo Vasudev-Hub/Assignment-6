@@ -1,22 +1,11 @@
 <script setup>
-import Header from './components/Header.vue';
-import Hero from './components/Hero.vue';
-import Footer from './components/Footer.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-    <div class="app-container">
-        <Header />
-        <Hero />
-        <Footer />
-    </div>
+  <Suspense>
+    <RouterView />
+  </Suspense>
 </template>
 
-<style scoped>
-.app-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f9f9f9; 
-}
-</style>
+<style scoped></style>

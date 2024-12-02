@@ -9,7 +9,7 @@ const selectedGenre = ref(28);
 const response = ref(null);
 
 async function getMovieByGenre() {
-  response.value = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${import.meta.env.VITE_TMDB_KEY}&with_genres=${selectedGenre.value}`);
+  response.value = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${import.meta.env.VITE_API_KEY}&with_genres=${selectedGenre.value}`);
 }
 
 function getMovieDetails(id) {
@@ -17,7 +17,7 @@ function getMovieDetails(id) {
 }
 
 onMounted(async () => {
-  response.value = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${import.meta.env.VITE_TMDB_KEY}&with_genres=${selectedGenre.value}`);
+  response.value = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${import.meta.env.VITE_API_KEY}&with_genres=${selectedGenre.value}`);
 })
 </script>
 
@@ -76,7 +76,7 @@ onMounted(async () => {
   padding: 10px;
   text-align: center;
   font-size: 1.1rem;
-  color: #e50914;
+  color: #ffffff;
 }
 
 select {
