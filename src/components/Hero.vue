@@ -1,77 +1,77 @@
 <script setup>
+
 </script>
-<template>
-    <div class="hero-section">
-        <div class="text">
-            <h2>Welcome to StreamFlix!</h2>
-            <p>Stream the latest movies and shows anytime, anywhere.</p>
+
+<template> 
+    <body>
+        <div class="herosection">
+          <img src="/src/assets/MovieScreen.jpg" alt="Hero Image" class="hero-section">
         </div>
-        <img src="/src/assets/Hero.jpg" alt="Hero" class="hero">
-        <button class="herobuttons">Browse Movies</button>
-        <button class="herobuttons2">Trending Movies</button>
-    </div>
+         <div class="my-hero-section">Welcome to StreamFlix! </div>
+          <div class="collage">
+                <img src="/src/assets/seating.jpg" alt="Collage" class="collage">
+          <div class="my-collage"> Stream the latest movies and shows anytime, anywhere. </div>
+        </div>
+    </body>
 </template>
+
 <style scoped>
-.hero-section {
-    position: relative;
+
+body {
+  background-color: black;
+  margin: -10px; 
+  padding: -10px;
+  width: 100%; 
+  position: relative;
+}
+
+.nav-buttons .button {
+    background-color: #e50914;
     color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
 }
 
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 55px;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.hero-section {
+  position: center;
+  width: 100%
 }
 
-.hero {
-    width: 100%;
-    height: 5%;
+.my-hero-section {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -650%);
+  font-size: 50px;
+  color: black;
+  font-style: bold;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.herobuttons {
-    position: absolute;
-    top: 67%;
-    left: 39%;
-    transform: translate(-50%, -50%);
-    background-color: #ffffffd8;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 20px;
-    text-align: center;
-    transition-duration: 0.4s;
-    cursor: pointer;
+.collage {
+  opacity: 70%;
+  position: center;
+  width: 100%;
 }
 
-.herobuttons:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+.my-collage {
+  font-size: 100px;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;  
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, 140%);  
+  text-align: center;  
 }
 
-.herobuttons2 {
-    position: absolute;
-    top: 67%;
-    left: 61%;
-    transform: translate(-50%, -50%);
-    background-color: #ffffffd8;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 20px;
-    text-align: center;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.herobuttons2:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+.collage {
+  opacity: 50%;
+  position: center;
+  width: 100%;
 }
 </style>

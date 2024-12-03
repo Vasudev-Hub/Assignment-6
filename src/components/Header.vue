@@ -1,36 +1,59 @@
 <script setup>
+
 </script>
-<template>
-    <div class = header>
-        <h1>StreamFlix</h1>
+
+<template> 
+    <div class="header"> 
+        <h1> StreamFlix</h1>
     </div>
     <div class="buttons">
         <RouterLink to="/register" class="button">Register</RouterLink>
         <RouterLink to="/login" class="button">Login</RouterLink>
     </div>
 </template>
+
 <style scoped>
-h1 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 50px;
+.header {
+  background-color: black; 
+  padding: 20px;  
+  width: 100%;  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  z-index: 1000;  
 }
 
-.header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-style: italic;
-    background-color: black;
-    text-align: center;
-    width: auto;
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; 
+  padding: 20px;
+  margin-top: 80px; 
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    width: 60px;
-    margin: 20px;
-    padding: 10px;
-    background-color: darkgray;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #e50914; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #f40612; 
+}
+
+h1 {
+  color: white; 
+  background-color: black;
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem; 
+  font-style: italic;
+  text-align: center;
+  margin: 0;
 }
 </style>
