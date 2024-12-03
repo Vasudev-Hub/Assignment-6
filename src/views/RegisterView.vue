@@ -57,12 +57,12 @@
 .navbar h1 {
   font-size: 2.5rem;
   font-family: 'Arial', sans-serif;
-  color: #e50914;
+  color: #3cff00;
   font-weight: bold;
 }
 
 .navbar .login {
-  background-color: #e50914;
+  background-color: #3cff00;
   color: white;
   padding: 10px 25px;
   text-decoration: none;
@@ -73,7 +73,7 @@
 }
 
 .navbar .login:hover {
-  background-color: #f40612;
+  background-color: #3cff00;
   transform: scale(1.05);
 }
 
@@ -101,12 +101,12 @@
 }
 
 .input-field:focus {
-  border-color: #e50914;
+  border-color: #3cff00;
   outline: none;
 }
 
 .register {
-  background-color: #e50914;
+  background-color: #3cff00;
   color: white;
   padding: 12px 30px;
   border: none;
@@ -117,7 +117,7 @@
 }
 
 .register:hover {
-  background-color: #f40612;
+  background-color: #3cff00;
   transform: scale(1.05);
 }
 

@@ -155,7 +155,7 @@ p span {
 
 
 p span:hover {
-  background-color: #e50914;
+  background-color: #3cff00;
 }
 
 

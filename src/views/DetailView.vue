@@ -33,7 +33,7 @@ if (!movieId) {
 }
 
 button {
-  background-color: #e50914;
+  background-color: #3cff00;
   color: white;
   font-size: 1.2rem;
   padding: 12px 24px;
@@ -46,7 +46,7 @@ button {
 }
 
 button:hover {
-  background-color: #f40612;
+  background-color: #3cff00;
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.8);
 }
@@ -57,7 +57,7 @@ button:focus {
 }
 
 button:active {
-  background-color: #f40612;
+  background-color: #3cff00;
   transform: scale(0.98);
 }
 
