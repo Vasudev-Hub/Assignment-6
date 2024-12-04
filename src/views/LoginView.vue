@@ -7,7 +7,7 @@ const router = useRouter();
 const password = ref('');
 
 const handleLogin = () => {
-  if (password.value === "ilovemovies") {
+  if (password.value === "netflixoverpriced") {
     router.push("/movies");
   } else {
     alert("Invalid Password");
