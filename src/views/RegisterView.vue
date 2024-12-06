@@ -1,5 +1,16 @@
 <script setup>
-</script>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+const router = useRouter();
+const password = ref('')
+const password2 = ref('')
+function handleSubmit() {
+  if (password.value === password2.value) {
+    router.push("/login");
+  
+  }
+}
+</script> 
 
 <template>
   <div class="hero">
@@ -10,7 +21,7 @@
       </div>
       <div class="form-container">
         <h2>Create an Account</h2>
-        <form>
+        <form @submit.prevent="handleSubmit">
           <input type="text" placeholder="First Name" class="input-field" required>
           <input type="text" placeholder="Last name" class="input-field" required>
           <input type="email" placeholder="Email" class="input-field" required>
