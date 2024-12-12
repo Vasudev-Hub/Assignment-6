@@ -74,7 +74,7 @@ const handleLogin = () => {
 
 
 .navbar .register {
-  background-color: #3cff00;
+  background-color: #8c00ff;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -84,7 +84,7 @@ const handleLogin = () => {
 
 
 .navbar .register:hover {
-  background-color: #3cff00;
+  background-color: #8c00ff;
 }
 
 
@@ -111,13 +111,13 @@ const handleLogin = () => {
 
 
 .input-field:focus {
-  border-color: #3cff00;
+  border-color: #8c00ff;
   outline: none;
 }
 
 
 .login {
-  background-color: #3cff00;
+  background-color: #8c00ff;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -129,7 +129,7 @@ const handleLogin = () => {
 
 
 .login:hover {
-  background-color: #3cff00;
+  background-color: #8c00ff;
   transform: scale(1.05);
 }
 

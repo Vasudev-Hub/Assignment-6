@@ -99,7 +99,7 @@ watch(() => props.id, (newId) => fetchMovieDetails(newId));
   align-items: center;
   min-height: 100vh;
   background-color: #141414;
-  color: #fff;
+  color: #ffffff;
   padding: 20px;
 }
 
@@ -155,7 +155,7 @@ p span {
 
 
 p span:hover {
-  background-color: #3cff00;
+  background-color: #8c00ff;
 }
 
 

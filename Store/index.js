@@ -2,8 +2,8 @@ import { ref } from "vue"
 import { defineStore } from "pinia";
 
 export const useStore = defineStore('store', () => {
-    const email = ref("");
-    const cart = ref(new Map());
-  
-    return { email, cart }
-  })
+  const user = ref(null);
+  const cart = ref(new Map());
+
+  return { user, cart }
+})

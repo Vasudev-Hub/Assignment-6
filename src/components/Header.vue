@@ -35,7 +35,7 @@
 .button {
   margin: 10px;
   padding: 10px 20px;
-  background-color: #3cff00; 
+  background-color: #8c00ff; 
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -44,7 +44,7 @@
 }
 
 .button:hover {
-  background-color: #3cff00; 
+  background-color: #8c00ff; 
 }
 
 h1 {

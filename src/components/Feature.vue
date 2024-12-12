@@ -42,7 +42,7 @@ const getMovieDetails = (id) => {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2.5rem;
-  color: #3cff00;
+  color: #8c00ff;
 }
 
 .movie-list {
@@ -77,7 +77,7 @@ const getMovieDetails = (id) => {
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #3cff00;
+  color: #8c00ff;
   background-color: #222;
   border-radius: 0 0 15px 15px;
 }

@@ -70,12 +70,12 @@ function handleSubmit() {
 .navbar h1 {
   font-size: 2.5rem;
   font-family: 'Arial', sans-serif;
-  color: #3cff00;
+  color: #8c00ff;
   font-weight: bold;
 }
 
 .navbar .login {
-  background-color: #3cff00;
+  background-color: #8c00ff;
   color: white;
   padding: 10px 25px;
   text-decoration: none;
@@ -86,7 +86,7 @@ function handleSubmit() {
 }
 
 .navbar .login:hover {
-  background-color: #3cff00;
+  background-color: #8c00ff;
   transform: scale(1.05);
 }
 
@@ -114,12 +114,12 @@ function handleSubmit() {
 }
 
 .input-field:focus {
-  border-color: #3cff00;
+  border-color: #8c00ff;
   outline: none;
 }
 
 .register {
-  background-color: #3cff00;
+  background-color: #8c00ff;
   color: white;
   padding: 12px 30px;
   border: none;
@@ -130,7 +130,7 @@ function handleSubmit() {
 }
 
 .register:hover {
-  background-color: #3cff00;
+  background-color: #8c00ff;
   transform: scale(1.05);
 }
 
